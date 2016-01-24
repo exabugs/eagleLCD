@@ -1,0 +1,15 @@
+[Eagle]
+Version="07 05 00"
+Platform="Mac OS X"
+Serial="62191E841E-LSR-WLM-1EL"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="sensor.lbr"
+
+[Desktop]
+Screen="1366 768"
+Window="Win_1"
+Window="Win_2"
