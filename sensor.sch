@@ -196,38 +196,6 @@ type 0309, grid 12.5 mm</description>
 <rectangle x1="4.318" y1="-0.3048" x2="5.1816" y2="0.3048" layer="21"/>
 <rectangle x1="-5.1816" y1="-0.3048" x2="-4.318" y2="0.3048" layer="21"/>
 </package>
-<package name="LM35">
-<pad name="P$1" x="-2.54" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="0" y="0" drill="0.8" shape="square"/>
-<pad name="P$3" x="2.54" y="0" drill="0.8" shape="square"/>
-<wire x1="-3.81" y1="0" x2="-3.81" y2="-1.27" width="0.127" layer="1"/>
-<wire x1="-3.81" y1="-1.27" x2="3.81" y2="-1.27" width="0.127" layer="1"/>
-<wire x1="3.81" y1="-1.27" x2="3.81" y2="0" width="0.127" layer="1"/>
-<wire x1="-3.81" y1="0" x2="3.81" y2="0" width="0.127" layer="1" curve="-180"/>
-<text x="-3.81" y="5.08" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.81" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="MI527(照度センサー)">
-<pad name="P$1" x="-1.27" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="1.27" y="0" drill="0.8" shape="square"/>
-<wire x1="1.27" y1="2.54" x2="1.27" y2="-2.54" width="0.127" layer="21" curve="-126.869898"/>
-<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="2.54" width="0.127" layer="21" curve="-126.869898"/>
-<wire x1="-1.27" y1="2.54" x2="1.27" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-2.54" x2="1.27" y2="-2.54" width="0.127" layer="21"/>
-</package>
-<package name="HR202L">
-<pad name="P$1" x="-1.27" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="1.27" y="0" drill="0.8" shape="square"/>
-<wire x1="-3.81" y1="-1.27" x2="3.81" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.127" layer="21"/>
-<wire x1="3.81" y1="1.27" x2="-3.81" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.127" layer="21"/>
-</package>
-<package name="SW520D(振動センサー)">
-<pad name="P$1" x="-1.27" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="1.27" y="0" drill="0.8" shape="square"/>
-<circle x="0" y="0" radius="2.83980625" width="0.127" layer="21"/>
-</package>
 </packages>
 <symbols>
 <symbol name="GND">
@@ -279,44 +247,6 @@ type 0309, grid 12.5 mm</description>
 <circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
 <text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="+3.3V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
-<symbol name="LM35(温度センサー)">
-<pin name="VS" x="-5.08" y="0" length="point" direction="pwr" rot="R270"/>
-<pin name="VOUT" x="0" y="0" length="point" direction="out" rot="R270"/>
-<pin name="GND" x="5.08" y="0" length="point" direction="sup" rot="R270"/>
-<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="0" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="10.16" y2="0" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="0" x2="10.16" y2="0" width="0.254" layer="94" curve="-180"/>
-<text x="-10.922" y="-10.16" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="12.7" y="-10.16" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-</symbol>
-<symbol name="MI527(照度センサー)">
-<pin name="VS" x="-2.54" y="0" length="point" direction="out" rot="R270"/>
-<pin name="GND" x="2.54" y="0" length="point" direction="sup" rot="R270"/>
-<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94" curve="-112.619865"/>
-<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.254" layer="94" curve="-112.619865"/>
-<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<text x="-9.906" y="-7.62" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="11.684" y="-7.62" size="1.778" layer="95" rot="R90">&gt;VALUE</text>
-</symbol>
-<symbol name="HR202L(湿度センサー)">
-<pin name="VS" x="-2.54" y="0" length="point" direction="out" rot="R270"/>
-<pin name="GND" x="2.54" y="0" length="point" direction="sup" rot="R270"/>
-<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<text x="-10.668" y="-7.62" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="12.446" y="-7.62" size="1.778" layer="95" rot="R90">&gt;VALUE</text>
-</symbol>
-<symbol name="SW520D(振動センサー)">
-<pin name="VS" x="-2.54" y="0" length="point" direction="out" rot="R270"/>
-<pin name="GND" x="2.54" y="0" length="point" direction="sup" rot="R270"/>
-<circle x="0" y="0" radius="10.16" width="0.254" layer="94"/>
-<text x="-10.668" y="-10.16" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="12.7" y="-10.16" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -387,75 +317,6 @@ type 0309, grid 12.5 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LM35">
-<description>温度センサー</description>
-<gates>
-<gate name="G$1" symbol="LM35(温度センサー)" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="LM35">
-<connects>
-<connect gate="G$1" pin="GND" pad="P$3"/>
-<connect gate="G$1" pin="VOUT" pad="P$2"/>
-<connect gate="G$1" pin="VS" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MI527">
-<description>照度センサー</description>
-<gates>
-<gate name="G$1" symbol="MI527(照度センサー)" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MI527(照度センサー)">
-<connects>
-<connect gate="G$1" pin="GND" pad="P$2"/>
-<connect gate="G$1" pin="VS" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="HR202L">
-<description>湿度センサー</description>
-<gates>
-<gate name="G$1" symbol="HR202L(湿度センサー)" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="HR202L">
-<connects>
-<connect gate="G$1" pin="GND" pad="P$2"/>
-<connect gate="G$1" pin="VS" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SW520D">
-<description>振動センサー</description>
-<gates>
-<gate name="G$1" symbol="SW520D(振動センサー)" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SW520D(振動センサー)">
-<connects>
-<connect gate="G$1" pin="GND" pad="P$2"/>
-<connect gate="G$1" pin="VS" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 <library name="sensor">
@@ -505,33 +366,6 @@ type 0309, grid 12.5 mm</description>
 <wire x1="6.5" y1="9.5" x2="6.5" y2="4.5" width="0.127" layer="27"/>
 <wire x1="-6" y1="6.5" x2="-3.5" y2="6.5" width="0.127" layer="27"/>
 <wire x1="-1" y1="6.5" x2="1.5" y2="6.5" width="0.127" layer="27"/>
-</package>
-<package name="DIL16">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="10.16" y1="2.921" x2="-10.16" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-10.16" y1="-2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="10.16" y1="2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-10.16" y1="2.921" x2="-10.16" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-10.16" y1="-2.921" x2="-10.16" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-10.16" y1="1.016" x2="-10.16" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="15" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="16" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-10.541" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-7.493" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="AQM0802">
 <wire x1="-15" y1="10" x2="-15" y2="-9.5" width="0.127" layer="21"/>
@@ -607,32 +441,6 @@ type 0309, grid 12.5 mm</description>
 <wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
 <text x="0" y="13.335" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-13.716" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
-</symbol>
-<symbol name="MCP30008">
-<wire x1="-10.16" y1="13.97" x2="-10.16" y2="-13.97" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-13.97" x2="10.16" y2="-13.97" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-13.97" x2="10.16" y2="13.97" width="0.254" layer="94"/>
-<wire x1="10.16" y1="13.97" x2="2.54" y2="13.97" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="13.97" x2="-2.54" y2="13.97" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="13.97" x2="2.54" y2="13.97" width="0.254" layer="94" curve="180"/>
-<text x="0.127" y="14.605" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="0.127" y="-15.24" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
-<pin name="CH0" x="-15.24" y="7.62" length="middle" direction="in"/>
-<pin name="CH1" x="-15.24" y="5.08" length="middle" direction="in"/>
-<pin name="CH2" x="-15.24" y="2.54" length="middle" direction="in"/>
-<pin name="CH3" x="-15.24" y="0" length="middle" direction="in"/>
-<pin name="CH4" x="-15.24" y="-2.54" length="middle" direction="in"/>
-<pin name="CH5" x="-15.24" y="-5.08" length="middle" direction="in"/>
-<pin name="CH6" x="-15.24" y="-7.62" length="middle" direction="in"/>
-<pin name="CH7" x="-15.24" y="-10.16" length="middle" direction="in"/>
-<pin name="DGND" x="15.24" y="-10.16" length="middle" direction="sup" rot="R180"/>
-<pin name="!CS!" x="15.24" y="-7.62" length="middle" direction="in" rot="R180"/>
-<pin name="DIN" x="15.24" y="-5.08" length="middle" direction="in" rot="R180"/>
-<pin name="DOUT" x="15.24" y="-2.54" length="middle" direction="out" rot="R180"/>
-<pin name="CLK" x="15.24" y="0" length="middle" direction="in" rot="R180"/>
-<pin name="AGND" x="15.24" y="2.54" length="middle" direction="sup" rot="R180"/>
-<pin name="VREF" x="15.24" y="5.08" length="middle" direction="pwr" rot="R180"/>
-<pin name="VDD" x="15.24" y="7.62" length="middle" direction="pwr" rot="R180"/>
 </symbol>
 <symbol name="AQM0802">
 <wire x1="-25.4" y1="12.7" x2="-25.4" y2="-12.7" width="0.254" layer="94"/>
@@ -720,37 +528,6 @@ type 0309, grid 12.5 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP3008" prefix="IC">
-<description>A/Dコンバータ(10bit 8ch)</description>
-<gates>
-<gate name="G$1" symbol="MCP30008" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DIL16">
-<connects>
-<connect gate="G$1" pin="!CS!" pad="10"/>
-<connect gate="G$1" pin="AGND" pad="14"/>
-<connect gate="G$1" pin="CH0" pad="1"/>
-<connect gate="G$1" pin="CH1" pad="2"/>
-<connect gate="G$1" pin="CH2" pad="3"/>
-<connect gate="G$1" pin="CH3" pad="4"/>
-<connect gate="G$1" pin="CH4" pad="5"/>
-<connect gate="G$1" pin="CH5" pad="6"/>
-<connect gate="G$1" pin="CH6" pad="7"/>
-<connect gate="G$1" pin="CH7" pad="8"/>
-<connect gate="G$1" pin="CLK" pad="13"/>
-<connect gate="G$1" pin="DGND" pad="9"/>
-<connect gate="G$1" pin="DIN" pad="11"/>
-<connect gate="G$1" pin="DOUT" pad="12"/>
-<connect gate="G$1" pin="VDD" pad="16"/>
-<connect gate="G$1" pin="VREF" pad="15"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="AQM0802">
 <gates>
 <gate name="G$1" symbol="AQM0802" x="0" y="-2.54"/>
@@ -815,6 +592,34 @@ type 0309, grid 12.5 mm</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="library">
+<packages>
+</packages>
+<symbols>
+<symbol name="+SUPPLY">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+3.3V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="+3.3V" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="P" symbol="+SUPPLY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -826,14 +631,12 @@ type 0309, grid 12.5 mm</description>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
-<part name="SUPPLY1" library="MyLibraries" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="MyLibraries" deviceset="GND" device=""/>
 <part name="S1" library="MyLibraries" deviceset="10-XX(タクトスイッチ)" device=""/>
 <part name="S2" library="MyLibraries" deviceset="10-XX(タクトスイッチ)" device=""/>
 <part name="SUPPLY3" library="MyLibraries" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="MyLibraries" deviceset="GND" device=""/>
 <part name="R1" library="MyLibraries" deviceset="R" device="" value="10k"/>
-<part name="SUPPLY5" library="MyLibraries" deviceset="+3.3V" device=""/>
 <part name="SUPPLY6" library="MyLibraries" deviceset="+3.3V" device=""/>
 <part name="SUPPLY7" library="MyLibraries" deviceset="+3.3V" device=""/>
 <part name="R3" library="MyLibraries" deviceset="R" device="" value="10k"/>
@@ -843,31 +646,16 @@ type 0309, grid 12.5 mm</description>
 <part name="SUPPLY11" library="MyLibraries" deviceset="+3.3V" device=""/>
 <part name="SUPPLY9" library="MyLibraries" deviceset="GND" device=""/>
 <part name="SUPPLY10" library="MyLibraries" deviceset="GND" device=""/>
-<part name="SUPPLY12" library="MyLibraries" deviceset="+3.3V" device=""/>
-<part name="SUPPLY13" library="MyLibraries" deviceset="GND" device=""/>
-<part name="SUPPLY14" library="MyLibraries" deviceset="+3.3V" device=""/>
-<part name="R6" library="MyLibraries" deviceset="R" device="" value="10k"/>
-<part name="SUPPLY15" library="MyLibraries" deviceset="GND" device=""/>
-<part name="SUPPLY16" library="MyLibraries" deviceset="+3.3V" device=""/>
-<part name="R7" library="MyLibraries" deviceset="R" device="" value="20k"/>
-<part name="SUPPLY17" library="MyLibraries" deviceset="GND" device=""/>
-<part name="SUPPLY18" library="MyLibraries" deviceset="+3.3V" device=""/>
-<part name="R8" library="MyLibraries" deviceset="R" device="" value="10k"/>
-<part name="SUPPLY19" library="MyLibraries" deviceset="GND" device=""/>
-<part name="SUPPLY20" library="MyLibraries" deviceset="GND" device=""/>
-<part name="温度センサー" library="MyLibraries" deviceset="LM35" device=""/>
-<part name="照度センサー" library="MyLibraries" deviceset="MI527" device=""/>
-<part name="湿度センサー" library="MyLibraries" deviceset="HR202L" device=""/>
-<part name="振動センサー" library="MyLibraries" deviceset="SW520D" device=""/>
 <part name="SUPPLY21" library="MyLibraries" deviceset="+3.3V" device=""/>
 <part name="R5" library="MyLibraries" deviceset="R" device="" value="10k"/>
-<part name="IC3" library="sensor" deviceset="ESP-WROOM-02" device=""/>
-<part name="IC1" library="sensor" deviceset="MCP3008" device=""/>
-<part name="U$1" library="sensor" deviceset="AQM0802" device=""/>
+<part name="IC1" library="sensor" deviceset="ESP-WROOM-02" device=""/>
+<part name="IC2" library="sensor" deviceset="AQM0802" device=""/>
 <part name="SUPPLY22" library="sensor" deviceset="GND" device=""/>
 <part name="SUPPLY23" library="sensor" deviceset="+3.3V" device=""/>
-<part name="R9" library="sensor" deviceset="R" device="" value="10K"/>
-<part name="R10" library="sensor" deviceset="R" device="" value="10K"/>
+<part name="R6" library="sensor" deviceset="R" device="" value="10K"/>
+<part name="R7" library="sensor" deviceset="R" device="" value="10K"/>
+<part name="SUPPLY1" library="library" deviceset="+3.3V" device=""/>
+<part name="SUPPLY5" library="library" deviceset="+3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -875,66 +663,35 @@ type 0309, grid 12.5 mm</description>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="SUPPLY1" gate="GND" x="111.76" y="114.3"/>
-<instance part="SUPPLY2" gate="GND" x="180.34" y="111.76"/>
-<instance part="S1" gate="1" x="139.7" y="96.52" rot="R270"/>
-<instance part="S2" gate="1" x="180.34" y="96.52" rot="R270"/>
-<instance part="SUPPLY3" gate="GND" x="116.84" y="81.28"/>
-<instance part="SUPPLY4" gate="GND" x="139.7" y="111.76"/>
-<instance part="R1" gate="G$1" x="116.84" y="88.9" rot="R90"/>
-<instance part="SUPPLY5" gate="P" x="111.76" y="157.48"/>
-<instance part="SUPPLY6" gate="P" x="132.08" y="81.28" rot="R180"/>
-<instance part="SUPPLY7" gate="P" x="187.96" y="81.28" rot="R180"/>
-<instance part="R3" gate="G$1" x="132.08" y="88.9" rot="R90"/>
-<instance part="R4" gate="G$1" x="187.96" y="88.9" rot="R90"/>
-<instance part="SUPPLY8" gate="P" x="139.7" y="157.48"/>
-<instance part="R2" gate="G$1" x="124.46" y="88.9" rot="R90"/>
-<instance part="SUPPLY11" gate="P" x="124.46" y="81.28" rot="R180"/>
-<instance part="SUPPLY9" gate="GND" x="147.32" y="81.28"/>
-<instance part="SUPPLY10" gate="GND" x="172.72" y="81.28"/>
-<instance part="SUPPLY12" gate="P" x="22.86" y="157.48"/>
-<instance part="SUPPLY13" gate="GND" x="22.86" y="129.54"/>
-<instance part="SUPPLY14" gate="P" x="22.86" y="114.3"/>
-<instance part="R6" gate="G$1" x="22.86" y="106.68" rot="R90"/>
-<instance part="SUPPLY15" gate="GND" x="22.86" y="91.44"/>
-<instance part="SUPPLY16" gate="P" x="22.86" y="78.74"/>
-<instance part="R7" gate="G$1" x="22.86" y="71.12" rot="R90"/>
-<instance part="SUPPLY17" gate="GND" x="22.86" y="50.8"/>
-<instance part="SUPPLY18" gate="P" x="22.86" y="38.1"/>
-<instance part="R8" gate="G$1" x="22.86" y="30.48" rot="R90"/>
-<instance part="SUPPLY19" gate="GND" x="22.86" y="10.16"/>
-<instance part="SUPPLY20" gate="GND" x="76.2" y="114.3"/>
-<instance part="温度センサー" gate="G$1" x="38.1" y="139.7" rot="R270"/>
-<instance part="照度センサー" gate="G$1" x="38.1" y="99.06" rot="R270"/>
-<instance part="湿度センサー" gate="G$1" x="38.1" y="63.5" rot="R270"/>
-<instance part="振動センサー" gate="G$1" x="38.1" y="22.86" rot="R270"/>
-<instance part="SUPPLY21" gate="P" x="124.46" y="157.48"/>
-<instance part="R5" gate="G$1" x="124.46" y="149.86" rot="R90"/>
-<instance part="IC3" gate="G$1" x="160.02" y="127"/>
-<instance part="IC1" gate="G$1" x="93.98" y="132.08"/>
-<instance part="U$1" gate="G$1" x="220.98" y="83.82" rot="R270"/>
-<instance part="SUPPLY22" gate="GND" x="215.9" y="147.32" rot="R180"/>
-<instance part="SUPPLY23" gate="P" x="226.06" y="147.32"/>
-<instance part="R9" gate="G$1" x="218.44" y="137.16" rot="R90"/>
-<instance part="R10" gate="G$1" x="220.98" y="137.16" rot="R90"/>
+<instance part="SUPPLY2" gate="GND" x="106.68" y="101.6"/>
+<instance part="S1" gate="1" x="66.04" y="86.36" rot="R270"/>
+<instance part="S2" gate="1" x="106.68" y="86.36" rot="R270"/>
+<instance part="SUPPLY3" gate="GND" x="43.18" y="71.12"/>
+<instance part="SUPPLY4" gate="GND" x="66.04" y="101.6"/>
+<instance part="R1" gate="G$1" x="43.18" y="78.74" rot="R90"/>
+<instance part="SUPPLY6" gate="P" x="58.42" y="71.12" rot="R180"/>
+<instance part="SUPPLY7" gate="P" x="114.3" y="71.12" rot="R180"/>
+<instance part="R3" gate="G$1" x="58.42" y="78.74" rot="R90"/>
+<instance part="R4" gate="G$1" x="114.3" y="78.74" rot="R90"/>
+<instance part="SUPPLY8" gate="P" x="66.04" y="147.32"/>
+<instance part="R2" gate="G$1" x="50.8" y="78.74" rot="R90"/>
+<instance part="SUPPLY11" gate="P" x="50.8" y="71.12" rot="R180"/>
+<instance part="SUPPLY9" gate="GND" x="73.66" y="71.12"/>
+<instance part="SUPPLY10" gate="GND" x="99.06" y="71.12"/>
+<instance part="SUPPLY21" gate="P" x="50.8" y="147.32"/>
+<instance part="R5" gate="G$1" x="50.8" y="139.7" rot="R90"/>
+<instance part="IC1" gate="G$1" x="86.36" y="116.84"/>
+<instance part="IC2" gate="G$1" x="185.42" y="116.84"/>
+<instance part="SUPPLY22" gate="GND" x="152.4" y="96.52"/>
+<instance part="SUPPLY23" gate="P" x="152.4" y="134.62"/>
+<instance part="R6" gate="G$1" x="137.16" y="127" rot="R90"/>
+<instance part="R7" gate="G$1" x="144.78" y="127" rot="R90"/>
+<instance part="SUPPLY1" gate="P" x="137.16" y="134.62"/>
+<instance part="SUPPLY5" gate="P" x="144.78" y="134.62"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$2" class="0">
-<segment>
-<wire x1="109.22" y1="127" x2="142.24" y2="127" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="IO13"/>
-<pinref part="IC1" gate="G$1" pin="DIN"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<wire x1="109.22" y1="129.54" x2="142.24" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="IO12"/>
-<pinref part="IC1" gate="G$1" pin="DOUT"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
@@ -942,75 +699,29 @@ type 0309, grid 12.5 mm</description>
 </segment>
 <segment>
 <pinref part="S1" gate="1" pin="S"/>
-<wire x1="144.78" y1="96.52" x2="147.32" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="96.52" x2="147.32" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="86.36" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="86.36" x2="73.66" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="S2" gate="1" pin="P"/>
-<wire x1="175.26" y1="96.52" x2="172.72" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="96.52" x2="172.72" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="86.36" x2="99.06" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="86.36" x2="99.06" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="SUPPLY10" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<wire x1="38.1" y1="134.62" x2="22.86" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="SUPPLY13" gate="GND" pin="GND"/>
-<wire x1="22.86" y1="134.62" x2="22.86" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="温度センサー" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="SUPPLY15" gate="GND" pin="GND"/>
-<wire x1="22.86" y1="93.98" x2="22.86" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="96.52" x2="38.1" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="照度センサー" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="SUPPLY17" gate="GND" pin="GND"/>
-<wire x1="22.86" y1="53.34" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="60.96" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="湿度センサー" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="SUPPLY19" gate="GND" pin="GND"/>
-<wire x1="22.86" y1="12.7" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="20.32" x2="38.1" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="振動センサー" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="SUPPLY20" gate="GND" pin="GND"/>
-<wire x1="76.2" y1="129.54" x2="76.2" y2="127" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="127" x2="76.2" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="124.46" x2="76.2" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="121.92" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="129.54" x2="78.74" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="121.92" x2="78.74" y2="121.92" width="0.1524" layer="91"/>
-<junction x="76.2" y="121.92"/>
-<wire x1="78.74" y1="127" x2="76.2" y2="127" width="0.1524" layer="91"/>
-<junction x="76.2" y="127"/>
-<wire x1="78.74" y1="124.46" x2="76.2" y2="124.46" width="0.1524" layer="91"/>
-<junction x="76.2" y="124.46"/>
-<pinref part="IC1" gate="G$1" pin="CH4"/>
-<pinref part="IC1" gate="G$1" pin="CH5"/>
-<pinref part="IC1" gate="G$1" pin="CH6"/>
-<pinref part="IC1" gate="G$1" pin="CH7"/>
-</segment>
-<segment>
-<wire x1="215.9" y1="101.6" x2="215.9" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="GND"/>
+<wire x1="162.56" y1="111.76" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="SUPPLY22" gate="GND" pin="GND"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="215.9" y1="106.68" x2="215.9" y2="144.78" width="0.1524" layer="91"/>
-<junction x="215.9" y="106.68"/>
+<wire x1="152.4" y1="111.76" x2="152.4" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<wire x1="109.22" y1="124.46" x2="116.84" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="124.46" x2="142.24" y2="124.46" width="0.1524" layer="91"/>
-<junction x="116.84" y="124.46"/>
-<wire x1="116.84" y1="93.98" x2="116.84" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="114.3" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="83.82" x2="43.18" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="IC3" gate="G$1" pin="IO15"/>
-<pinref part="IC1" gate="G$1" pin="!CS!"/>
+<pinref part="IC1" gate="G$1" pin="IO15"/>
 </segment>
 </net>
 <net name="+3.3V" class="0">
@@ -1024,214 +735,117 @@ type 0309, grid 12.5 mm</description>
 </segment>
 <segment>
 <pinref part="SUPPLY8" gate="P" pin="+3.3V"/>
-<wire x1="139.7" y1="154.94" x2="139.7" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="137.16" x2="142.24" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="3V3"/>
-</segment>
-<segment>
-<wire x1="109.22" y1="137.16" x2="111.76" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="SUPPLY5" gate="P" pin="+3.3V"/>
-<wire x1="111.76" y1="137.16" x2="111.76" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="139.7" x2="111.76" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="139.7" x2="111.76" y2="139.7" width="0.1524" layer="91"/>
-<junction x="111.76" y="139.7"/>
-<pinref part="IC1" gate="G$1" pin="VREF"/>
-<pinref part="IC1" gate="G$1" pin="VDD"/>
+<wire x1="66.04" y1="144.78" x2="66.04" y2="127" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="127" x2="68.58" y2="127" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="3V3"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="SUPPLY11" gate="P" pin="+3.3V"/>
 </segment>
 <segment>
-<pinref part="SUPPLY12" gate="P" pin="+3.3V"/>
-<wire x1="22.86" y1="154.94" x2="22.86" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="144.78" x2="38.1" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="温度センサー" gate="G$1" pin="VS"/>
-</segment>
-<segment>
-<pinref part="SUPPLY14" gate="P" pin="+3.3V"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="SUPPLY16" gate="P" pin="+3.3V"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="SUPPLY18" gate="P" pin="+3.3V"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="SUPPLY21" gate="P" pin="+3.3V"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VDD"/>
-<wire x1="226.06" y1="106.68" x2="226.06" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="218.44" y1="142.24" x2="220.98" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="SUPPLY1" gate="P" pin="+3.3V"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="SUPPLY5" gate="P" pin="+3.3V"/>
+</segment>
+<segment>
 <pinref part="SUPPLY23" gate="P" pin="+3.3V"/>
-<wire x1="220.98" y1="142.24" x2="226.06" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="142.24" x2="226.06" y2="144.78" width="0.1524" layer="91"/>
-<junction x="226.06" y="142.24"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-<junction x="220.98" y="142.24"/>
+<wire x1="152.4" y1="132.08" x2="152.4" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="VDD"/>
+<wire x1="152.4" y1="121.92" x2="162.56" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<wire x1="142.24" y1="121.92" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="111.76" x2="50.8" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="93.98" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="IO2"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<wire x1="109.22" y1="132.08" x2="142.24" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="IO14"/>
-<pinref part="IC1" gate="G$1" pin="CLK"/>
+<wire x1="50.8" y1="83.82" x2="50.8" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="IO2"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<wire x1="142.24" y1="119.38" x2="132.08" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="109.22" x2="58.42" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="132.08" y1="93.98" x2="132.08" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="83.82" x2="58.42" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="S1" gate="1" pin="P"/>
-<wire x1="132.08" y1="96.52" x2="132.08" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="96.52" x2="134.62" y2="96.52" width="0.1524" layer="91"/>
-<junction x="132.08" y="96.52"/>
-<pinref part="IC3" gate="G$1" pin="IO0"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<wire x1="38.1" y1="139.7" x2="78.74" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="温度センサー" gate="G$1" pin="VOUT"/>
-<pinref part="IC1" gate="G$1" pin="CH0"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="101.6" x2="38.1" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="101.6" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="101.6" x2="53.34" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="137.16" x2="78.74" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="照度センサー" gate="G$1" pin="VS"/>
-<junction x="38.1" y="101.6"/>
-<pinref part="IC1" gate="G$1" pin="CH1"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<wire x1="22.86" y1="66.04" x2="38.1" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="66.04" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="66.04" x2="58.42" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="134.62" x2="78.74" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="湿度センサー" gate="G$1" pin="VS"/>
-<junction x="38.1" y="66.04"/>
-<pinref part="IC1" gate="G$1" pin="CH2"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<wire x1="22.86" y1="25.4" x2="38.1" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="25.4" x2="63.5" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="25.4" x2="63.5" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="132.08" x2="78.74" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-<pinref part="振動センサー" gate="G$1" pin="VS"/>
-<junction x="38.1" y="25.4"/>
-<pinref part="IC1" gate="G$1" pin="CH3"/>
+<wire x1="58.42" y1="86.36" x2="58.42" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="86.36" x2="60.96" y2="86.36" width="0.1524" layer="91"/>
+<junction x="58.42" y="86.36"/>
+<pinref part="IC1" gate="G$1" pin="IO0"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="144.78" x2="124.46" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="134.62" x2="142.24" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="EN"/>
+<wire x1="50.8" y1="134.62" x2="50.8" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="124.46" x2="68.58" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="EN"/>
 </segment>
 </net>
 <net name="GND1" class="0">
 <segment>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
-<wire x1="139.7" y1="114.3" x2="139.7" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="116.84" x2="142.24" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="GND1"/>
+<wire x1="66.04" y1="104.14" x2="66.04" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="106.68" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="GND1"/>
 </segment>
 </net>
 <net name="GND3" class="0">
 <segment>
-<wire x1="177.8" y1="124.46" x2="180.34" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="124.46" x2="180.34" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="137.16" x2="180.34" y2="137.16" width="0.1524" layer="91"/>
-<junction x="180.34" y="124.46"/>
+<wire x1="104.14" y1="114.3" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="114.3" x2="106.68" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="127" x2="106.68" y2="127" width="0.1524" layer="91"/>
+<junction x="106.68" y="114.3"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
-<wire x1="180.34" y1="137.16" x2="180.34" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="GND2"/>
-<pinref part="IC3" gate="G$1" pin="GND3"/>
-</segment>
-</net>
-<net name="AGND" class="0">
-<segment>
-<wire x1="111.76" y1="121.92" x2="111.76" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="121.92" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="SUPPLY1" gate="GND" pin="GND"/>
-<wire x1="111.76" y1="121.92" x2="111.76" y2="134.62" width="0.1524" layer="91"/>
-<junction x="111.76" y="121.92"/>
-<wire x1="111.76" y1="134.62" x2="109.22" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="DGND"/>
-<pinref part="IC1" gate="G$1" pin="AGND"/>
+<wire x1="106.68" y1="127" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="GND2"/>
+<pinref part="IC1" gate="G$1" pin="GND3"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="IC3" gate="G$1" pin="IO5"/>
-<wire x1="177.8" y1="127" x2="220.98" y2="127" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="101.6" x2="220.98" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="220.98" y1="106.68" x2="220.98" y2="127" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="127" x2="220.98" y2="132.08" width="0.1524" layer="91"/>
-<junction x="220.98" y="127"/>
-<pinref part="U$1" gate="G$1" pin="SCL"/>
-<junction x="220.98" y="106.68"/>
+<pinref part="IC1" gate="G$1" pin="IO5"/>
+<wire x1="104.14" y1="116.84" x2="144.78" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="162.56" y1="116.84" x2="144.78" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="116.84" x2="144.78" y2="121.92" width="0.1524" layer="91"/>
+<junction x="144.78" y="116.84"/>
+<pinref part="IC2" gate="G$1" pin="SCL"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="IC3" gate="G$1" pin="IO4"/>
-<wire x1="177.8" y1="116.84" x2="218.44" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="101.6" x2="218.44" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="218.44" y1="106.68" x2="218.44" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="116.84" x2="218.44" y2="132.08" width="0.1524" layer="91"/>
-<junction x="218.44" y="116.84"/>
-<pinref part="U$1" gate="G$1" pin="SDA"/>
-<junction x="218.44" y="106.68"/>
+<pinref part="IC1" gate="G$1" pin="IO4"/>
+<wire x1="104.14" y1="106.68" x2="137.16" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="137.16" y1="106.68" x2="137.16" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="SDA"/>
+<wire x1="137.16" y1="114.3" x2="137.16" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="114.3" x2="137.16" y2="114.3" width="0.1524" layer="91"/>
+<junction x="137.16" y="114.3"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<wire x1="223.52" y1="101.6" x2="223.52" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="223.52" y1="106.68" x2="223.52" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="93.98" x2="187.96" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="96.52" x2="187.96" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="129.54" x2="177.8" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="83.82" x2="114.3" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="86.36" x2="114.3" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="119.38" x2="104.14" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="S2" gate="1" pin="S"/>
-<wire x1="185.42" y1="96.52" x2="187.96" y2="96.52" width="0.1524" layer="91"/>
-<junction x="187.96" y="96.52"/>
-<wire x1="177.8" y1="134.62" x2="187.96" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="134.62" x2="187.96" y2="129.54" width="0.1524" layer="91"/>
-<junction x="187.96" y="129.54"/>
-<pinref part="IC3" gate="G$1" pin="!RST!"/>
-<pinref part="IC3" gate="G$1" pin="IO16"/>
-<wire x1="187.96" y1="129.54" x2="223.52" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="!RESET!"/>
-<junction x="223.52" y="106.68"/>
+<wire x1="111.76" y1="86.36" x2="114.3" y2="86.36" width="0.1524" layer="91"/>
+<junction x="114.3" y="86.36"/>
+<junction x="114.3" y="119.38"/>
+<pinref part="IC1" gate="G$1" pin="!RST!"/>
+<wire x1="114.3" y1="119.38" x2="162.56" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="!RESET!"/>
 </segment>
 </net>
 </nets>

@@ -669,30 +669,32 @@ type 0309, grid 12.5 mm</description>
 <part name="SUPPLY5" library="MyLibraries" deviceset="+3.3V" device=""/>
 <part name="SUPPLY6" library="MyLibraries" deviceset="+3.3V" device=""/>
 <part name="SUPPLY7" library="MyLibraries" deviceset="+3.3V" device=""/>
-<part name="U$1" library="MyLibraries" deviceset="R" device="" value="10k"/>
-<part name="U$2" library="MyLibraries" deviceset="R" device="" value="10k"/>
+<part name="R3" library="MyLibraries" deviceset="R" device="" value="10k"/>
+<part name="R4" library="MyLibraries" deviceset="R" device="" value="10k"/>
 <part name="SUPPLY8" library="MyLibraries" deviceset="+3.3V" device=""/>
 <part name="IC2" library="MyLibraries" deviceset="MCP3008" device=""/>
-<part name="U$3" library="MyLibraries" deviceset="R" device="" value="10k"/>
+<part name="R2" library="MyLibraries" deviceset="R" device="" value="10k"/>
 <part name="SUPPLY11" library="MyLibraries" deviceset="+3.3V" device=""/>
 <part name="SUPPLY9" library="MyLibraries" deviceset="GND" device=""/>
 <part name="SUPPLY10" library="MyLibraries" deviceset="GND" device=""/>
 <part name="SUPPLY12" library="MyLibraries" deviceset="+3.3V" device=""/>
 <part name="SUPPLY13" library="MyLibraries" deviceset="GND" device=""/>
 <part name="SUPPLY14" library="MyLibraries" deviceset="+3.3V" device=""/>
-<part name="U$5" library="MyLibraries" deviceset="R" device="" value="10k"/>
+<part name="R6" library="MyLibraries" deviceset="R" device="" value="10k"/>
 <part name="SUPPLY15" library="MyLibraries" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="MyLibraries" deviceset="+3.3V" device=""/>
-<part name="U$7" library="MyLibraries" deviceset="R" device="" value="20k"/>
+<part name="R7" library="MyLibraries" deviceset="R" device="" value="20k"/>
 <part name="SUPPLY17" library="MyLibraries" deviceset="GND" device=""/>
 <part name="SUPPLY18" library="MyLibraries" deviceset="+3.3V" device=""/>
-<part name="U$9" library="MyLibraries" deviceset="R" device="" value="10k"/>
+<part name="R8" library="MyLibraries" deviceset="R" device="" value="10k"/>
 <part name="SUPPLY19" library="MyLibraries" deviceset="GND" device=""/>
 <part name="SUPPLY20" library="MyLibraries" deviceset="GND" device=""/>
 <part name="温度センサー" library="MyLibraries" deviceset="LM35" device=""/>
 <part name="照度センサー" library="MyLibraries" deviceset="MI527" device=""/>
 <part name="湿度センサー" library="MyLibraries" deviceset="HR202L" device=""/>
 <part name="振動センサー" library="MyLibraries" deviceset="SW520D" device=""/>
+<part name="SUPPLY21" library="MyLibraries" deviceset="+3.3V" device=""/>
+<part name="R5" library="MyLibraries" deviceset="R" device="" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -711,30 +713,32 @@ type 0309, grid 12.5 mm</description>
 <instance part="SUPPLY5" gate="P" x="119.38" y="157.48"/>
 <instance part="SUPPLY6" gate="P" x="139.7" y="81.28" rot="R180"/>
 <instance part="SUPPLY7" gate="P" x="195.58" y="81.28" rot="R180"/>
-<instance part="U$1" gate="G$1" x="139.7" y="88.9" rot="R90"/>
-<instance part="U$2" gate="G$1" x="195.58" y="88.9" rot="R90"/>
+<instance part="R3" gate="G$1" x="139.7" y="88.9" rot="R90"/>
+<instance part="R4" gate="G$1" x="195.58" y="88.9" rot="R90"/>
 <instance part="SUPPLY8" gate="P" x="147.32" y="157.48"/>
 <instance part="IC2" gate="G$1" x="101.6" y="132.08"/>
-<instance part="U$3" gate="G$1" x="132.08" y="88.9" rot="R90"/>
+<instance part="R2" gate="G$1" x="132.08" y="88.9" rot="R90"/>
 <instance part="SUPPLY11" gate="P" x="132.08" y="81.28" rot="R180"/>
 <instance part="SUPPLY9" gate="GND" x="154.94" y="81.28"/>
 <instance part="SUPPLY10" gate="GND" x="180.34" y="81.28"/>
 <instance part="SUPPLY12" gate="P" x="25.4" y="157.48"/>
 <instance part="SUPPLY13" gate="GND" x="25.4" y="129.54"/>
 <instance part="SUPPLY14" gate="P" x="25.4" y="114.3"/>
-<instance part="U$5" gate="G$1" x="25.4" y="106.68" rot="R90"/>
+<instance part="R6" gate="G$1" x="25.4" y="106.68" rot="R90"/>
 <instance part="SUPPLY15" gate="GND" x="25.4" y="91.44"/>
 <instance part="SUPPLY16" gate="P" x="25.4" y="78.74"/>
-<instance part="U$7" gate="G$1" x="25.4" y="71.12" rot="R90"/>
+<instance part="R7" gate="G$1" x="25.4" y="71.12" rot="R90"/>
 <instance part="SUPPLY17" gate="GND" x="25.4" y="50.8"/>
 <instance part="SUPPLY18" gate="P" x="25.4" y="38.1"/>
-<instance part="U$9" gate="G$1" x="25.4" y="30.48" rot="R90"/>
+<instance part="R8" gate="G$1" x="25.4" y="30.48" rot="R90"/>
 <instance part="SUPPLY19" gate="GND" x="25.4" y="10.16"/>
-<instance part="SUPPLY20" gate="GND" x="81.28" y="114.3"/>
+<instance part="SUPPLY20" gate="GND" x="83.82" y="114.3"/>
 <instance part="温度センサー" gate="G$1" x="40.64" y="139.7" rot="R270"/>
 <instance part="照度センサー" gate="G$1" x="40.64" y="99.06" rot="R270"/>
 <instance part="湿度センサー" gate="G$1" x="40.64" y="63.5" rot="R270"/>
 <instance part="振動センサー" gate="G$1" x="40.64" y="22.86" rot="R270"/>
+<instance part="SUPPLY21" gate="P" x="132.08" y="157.48"/>
+<instance part="R5" gate="G$1" x="132.08" y="149.86" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -823,20 +827,20 @@ type 0309, grid 12.5 mm</description>
 <segment>
 <pinref part="SUPPLY20" gate="GND" pin="GND"/>
 <pinref part="IC2" gate="G$1" pin="CH4"/>
-<wire x1="81.28" y1="129.54" x2="81.28" y2="127" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="127" x2="81.28" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="124.46" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="121.92" x2="81.28" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="129.54" x2="86.36" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="129.54" x2="83.82" y2="127" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="127" x2="83.82" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="124.46" x2="83.82" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="121.92" x2="83.82" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="129.54" x2="86.36" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="CH7"/>
-<wire x1="81.28" y1="121.92" x2="86.36" y2="121.92" width="0.1524" layer="91"/>
-<junction x="81.28" y="121.92"/>
+<wire x1="83.82" y1="121.92" x2="86.36" y2="121.92" width="0.1524" layer="91"/>
+<junction x="83.82" y="121.92"/>
 <pinref part="IC2" gate="G$1" pin="CH5"/>
-<wire x1="86.36" y1="127" x2="81.28" y2="127" width="0.1524" layer="91"/>
-<junction x="81.28" y="127"/>
+<wire x1="86.36" y1="127" x2="83.82" y2="127" width="0.1524" layer="91"/>
+<junction x="83.82" y="127"/>
 <pinref part="IC2" gate="G$1" pin="CH6"/>
-<wire x1="86.36" y1="124.46" x2="81.28" y2="124.46" width="0.1524" layer="91"/>
-<junction x="81.28" y="124.46"/>
+<wire x1="86.36" y1="124.46" x2="83.82" y2="124.46" width="0.1524" layer="91"/>
+<junction x="83.82" y="124.46"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -853,21 +857,17 @@ type 0309, grid 12.5 mm</description>
 <net name="+3.3V" class="0">
 <segment>
 <pinref part="SUPPLY6" gate="P" pin="+3.3V"/>
-<pinref part="U$1" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="SUPPLY7" gate="P" pin="+3.3V"/>
-<pinref part="U$2" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="SUPPLY8" gate="P" pin="+3.3V"/>
 <wire x1="147.32" y1="154.94" x2="147.32" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="3V3"/>
-<pinref part="IC1" gate="G$1" pin="EN"/>
 <wire x1="147.32" y1="137.16" x2="149.86" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="134.62" x2="147.32" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="134.62" x2="147.32" y2="137.16" width="0.1524" layer="91"/>
-<junction x="147.32" y="137.16"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="VREF"/>
@@ -880,7 +880,7 @@ type 0309, grid 12.5 mm</description>
 <junction x="119.38" y="139.7"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="SUPPLY11" gate="P" pin="+3.3V"/>
 </segment>
 <segment>
@@ -891,22 +891,26 @@ type 0309, grid 12.5 mm</description>
 </segment>
 <segment>
 <pinref part="SUPPLY14" gate="P" pin="+3.3V"/>
-<pinref part="U$5" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="SUPPLY16" gate="P" pin="+3.3V"/>
-<pinref part="U$7" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="SUPPLY18" gate="P" pin="+3.3V"/>
-<pinref part="U$9" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="SUPPLY21" gate="P" pin="+3.3V"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="IO2"/>
 <wire x1="149.86" y1="121.92" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="93.98" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -921,7 +925,7 @@ type 0309, grid 12.5 mm</description>
 <segment>
 <pinref part="IC1" gate="G$1" pin="IO0"/>
 <wire x1="149.86" y1="119.38" x2="139.7" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="93.98" x2="139.7" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="S1" gate="1" pin="P"/>
 <wire x1="139.7" y1="96.52" x2="139.7" y2="119.38" width="0.1524" layer="91"/>
@@ -931,7 +935,7 @@ type 0309, grid 12.5 mm</description>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="93.98" x2="195.58" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="!RST!"/>
 <wire x1="195.58" y1="96.52" x2="195.58" y2="129.54" width="0.1524" layer="91"/>
@@ -962,7 +966,7 @@ type 0309, grid 12.5 mm</description>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="101.6" x2="40.64" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="101.6" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="101.6" x2="58.42" y2="137.16" width="0.1524" layer="91"/>
@@ -979,7 +983,7 @@ type 0309, grid 12.5 mm</description>
 <wire x1="63.5" y1="66.04" x2="63.5" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="CH2"/>
 <wire x1="63.5" y1="134.62" x2="86.36" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="湿度センサー" gate="G$1" pin="VS"/>
 <junction x="40.64" y="66.04"/>
 </segment>
@@ -991,9 +995,17 @@ type 0309, grid 12.5 mm</description>
 <wire x1="68.58" y1="25.4" x2="68.58" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="CH3"/>
 <wire x1="68.58" y1="132.08" x2="86.36" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="振動センサー" gate="G$1" pin="VS"/>
 <junction x="40.64" y="25.4"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="EN"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="144.78" x2="132.08" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="134.62" x2="149.86" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
